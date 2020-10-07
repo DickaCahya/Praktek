@@ -1,0 +1,33 @@
+package Percabangan;
+import java.util.Scanner;
+/**
+ *
+ * @author LENOVO
+ */
+public class NilaiHuruf {
+        public static void main(String[] args) {
+    // Buat Scanner
+ Scanner x = new Scanner(System.in);
+// Ambil Nilai
+ System.out.print("Masukan Nilai : "); 
+ int a = x.nextInt();
+  
+if (a>= 0&&a<=55)
+  //print
+  System.out.println("Nilai Anda E");
+else if(a >= 56&&a<=65){
+    System.out.println("Nilai Anda D");
+}
+else if(a>=66&&a<=75){
+    System.out.println("Nilai Anda C");
+}else if(a>=76&&a<=85){
+     System.out.println("Nilai Anda B");
+}
+else if(a>=86&&a<=100){
+     System.out.println("Nilai Anda A");
+}
+else{
+    System.out.println("EROR");
+}
+}
+}
