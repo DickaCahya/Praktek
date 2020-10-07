@@ -1,0 +1,37 @@
+package Percabangan;
+import java.util.Scanner;
+/**
+ *
+ * @author LENOVO
+ */
+public class TinggiBadan {
+    public static void main(String[] args) {
+ // Buat Scanner
+ Scanner inp = new Scanner(System.in);
+ 
+ // Ambil Nama
+ System.out.print("Masukkan nama anda = ");
+ String Nama = inp.next();
+ 
+ // Ambil jenis kelamin
+ System.out.print("Jenis Kelamin (L/P) = ");
+ String Jenis_kelamin = inp.next();
+ 
+ // Ambil tinggi badan
+ System.out.print("Masukkan tinggi badan = ");
+ int tinggi_badan = inp.nextInt();
+ 
+ if (Jenis_kelamin =="L")
+    if(tinggi_badan <=170){
+         System.out.println("Anda Gagal");
+     }if(tinggi_badan<=230){
+         System.out.println("Selamat Anda Lulus");
+ }
+ else if(Jenis_kelamin =="P")
+        if(tinggi_badan<=160){
+         System.out.println("Anda Gagal");
+     }else{
+         System.out.println("Selamat Anda Lulus"); 
+         }
+     }
+ }
